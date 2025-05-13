@@ -3,10 +3,11 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name="utilities.ExtentReportClass" />
+		<listener class-name="Utilities.ExtentReportClass" />
 	</listeners>
 	
 	<test thread-count="5" name="Test">
+	<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="TestCases.HomepageTest" />
 		</classes>

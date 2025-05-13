@@ -2,28 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41821" started-at="2025-05-13T14:43:45Z" finished-at="2025-05-13T14:44:27Z">
+  <suite name="Suite" duration-ms="73968" started-at="2025-05-13T17:46:50Z" finished-at="2025-05-13T17:48:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41821" started-at="2025-05-13T14:43:45Z" finished-at="2025-05-13T14:44:27Z">
+    <test name="Test" duration-ms="73968" started-at="2025-05-13T17:46:50Z" finished-at="2025-05-13T17:48:04Z">
       <class name="TestCases.HomepageTest">
-        <test-method status="PASS" signature="setdriver()[pri:0, instance:TestCases.HomepageTest@153f17c]" name="setdriver" is-config="true" duration-ms="31879" started-at="2025-05-13T14:43:45Z" finished-at="2025-05-13T14:44:17Z">
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:TestCases.HomepageTest@1ec318]" name="setdriver" is-config="true" duration-ms="68843" started-at="2025-05-13T17:46:50Z" finished-at="2025-05-13T17:47:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setdriver -->
-        <test-method status="PASS" signature="VerifyTitleTest()[pri:0, instance:TestCases.HomepageTest@153f17c]" name="VerifyTitleTest" duration-ms="95" started-at="2025-05-13T14:44:17Z" finished-at="2025-05-13T14:44:17Z">
+        <test-method status="PASS" signature="VerifyTitleTest()[pri:0, instance:TestCases.HomepageTest@1ec318]" name="VerifyTitleTest" duration-ms="182" started-at="2025-05-13T17:47:59Z" finished-at="2025-05-13T17:47:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitleTest -->
-        <test-method status="PASS" signature="ClickonCart()[pri:1, instance:TestCases.HomepageTest@153f17c]" name="ClickonCart" duration-ms="7197" started-at="2025-05-13T14:44:17Z" finished-at="2025-05-13T14:44:25Z">
+        <test-method status="PASS" signature="ClickonCart()[pri:1, instance:TestCases.HomepageTest@1ec318]" name="ClickonCart" duration-ms="3849" started-at="2025-05-13T17:47:59Z" finished-at="2025-05-13T17:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickonCart -->
-        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:TestCases.HomepageTest@153f17c]" name="CloseDriver" is-config="true" duration-ms="2613" started-at="2025-05-13T14:44:25Z" finished-at="2025-05-13T14:44:27Z">
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:TestCases.HomepageTest@1ec318]" name="CloseDriver" is-config="true" duration-ms="714" started-at="2025-05-13T17:48:03Z" finished-at="2025-05-13T17:48:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
       </class> <!-- TestCases.HomepageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

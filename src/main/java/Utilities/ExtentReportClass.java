@@ -28,8 +28,8 @@ public class ExtentReportClass extends TestUtility implements ITestListener {
 	String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH.mm.ss").format(new Date());
 	String repName = "Test-Report-" + ".html";
 	ExtentSparkReporter sparkreporter = new ExtentSparkReporter(".//TestReports//" +timeStamp+ repName);	
-	sparkreporter.config().setDocumentTitle("MyntraTest");
-	sparkreporter.config().setReportName("FunctionalTesting");
+	sparkreporter.config().setDocumentTitle("JIoMartTest");
+	sparkreporter.config().setReportName("RegressionTesting");
 	sparkreporter.config().setTheme(Theme.STANDARD);
 	extent = new ExtentReports();
 	extent.attachReporter(sparkreporter);
