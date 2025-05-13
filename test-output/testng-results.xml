@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="41821" started-at="2025-05-13T14:43:45Z" finished-at="2025-05-13T14:44:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="41821" started-at="2025-05-13T14:43:45Z" finished-at="2025-05-13T14:44:27Z">
+      <class name="TestCases.HomepageTest">
+        <test-method status="PASS" signature="setdriver()[pri:0, instance:TestCases.HomepageTest@153f17c]" name="setdriver" is-config="true" duration-ms="31879" started-at="2025-05-13T14:43:45Z" finished-at="2025-05-13T14:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="VerifyTitleTest()[pri:0, instance:TestCases.HomepageTest@153f17c]" name="VerifyTitleTest" duration-ms="95" started-at="2025-05-13T14:44:17Z" finished-at="2025-05-13T14:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTitleTest -->
+        <test-method status="PASS" signature="ClickonCart()[pri:1, instance:TestCases.HomepageTest@153f17c]" name="ClickonCart" duration-ms="7197" started-at="2025-05-13T14:44:17Z" finished-at="2025-05-13T14:44:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonCart -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:TestCases.HomepageTest@153f17c]" name="CloseDriver" is-config="true" duration-ms="2613" started-at="2025-05-13T14:44:25Z" finished-at="2025-05-13T14:44:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+      </class> <!-- TestCases.HomepageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
