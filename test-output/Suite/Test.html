@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 13 23:16:50 IST 2025</td>
+<td>Started on:</td><td>Mon May 26 16:25:56 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>73 seconds (73968 ms)</td>
+<tr><td>Total time:</td><td>27 seconds (27185 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,51 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.AddFruitstocart.addfruits()'><b>addfruits</b><br>Test class: TestCases.AddFruitstocart</td>
+<td><div><pre>junit.framework.ComparisonFailure: Payment Details expected:&lt;Payment Details&gt; but was:&lt;Successfully added fruits to cart page and awaiting payment&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at TestCases.AddFruitstocart.addfruits(AddFruitstocart.java:35)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22951111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22951111'><pre>junit.framework.ComparisonFailure: Payment Details expected:&lt;Payment Details&gt; but was:&lt;Successfully added fruits to cart page and awaiting payment&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at TestCases.AddFruitstocart.addfruits(AddFruitstocart.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>TestCases.AddFruitstocart@1ec318</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,15 +120,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.HomepageTest.ClickonCart()'><b>ClickonCart</b><br>Test class: TestCases.HomepageTest</td>
+<td title='TestCases.AddFruitstocart.Clickonfruits()'><b>Clickonfruits</b><br>Test class: TestCases.AddFruitstocart</td>
 <td></td>
-<td>3</td>
-<td>TestCases.HomepageTest@1ec318</td></tr>
-<tr>
-<td title='TestCases.HomepageTest.VerifyTitleTest()'><b>VerifyTitleTest</b><br>Test class: TestCases.HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>TestCases.HomepageTest@1ec318</td></tr>
+<td>5</td>
+<td>TestCases.AddFruitstocart@1ec318</td></tr>
 </table><p>
 </body>
 </html>

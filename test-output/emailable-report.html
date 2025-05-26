@@ -8,12 +8,23 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">73,968</td><td></td><td></td></tr>
+<tr><th colspan="7">Jio Mart Website</th></tr>
+<tr><td><a href="#t0">Homepage,Fruits page and cart page Validation</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,136</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestCases.HomepageTest</td><td><a href="#m0">ClickonCart</a></td><td rowspan="1">1747158479996</td><td rowspan="1">3849</td></tr><tr class="passedeven"><td><a href="#m1">VerifyTitleTest</a></td><td rowspan="1">1747158479811</td><td rowspan="1">182</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Jio Mart Website</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Homepage,Fruits page and cart page Validation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.CartpageValidation</td><td><a href="#m0">ValidatesearchwithDataprovider</a></td><td rowspan="1">1748275702487</td><td rowspan="1">10505</td></tr><tr><th colspan="4">Homepage,Fruits page and cart page Validation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.CartpageValidation</td><td><a href="#m1">ValidatesearchwithDataprovider</a></td><td rowspan="1">1748275699806</td><td rowspan="1">2676</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestCases.HomepageTest#ClickonCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCases.HomepageTest#VerifyTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Homepage,Fruits page and cart page Validation</h2><h3 id="m0">TestCases.CartpageValidation#ValidatesearchwithDataprovider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Sugar,</td><td>Salt</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt=&apos;close icon&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ARAVIND&apos;, ip: &apos;192.168.12.90&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bedaa2c86f91f9508f65e0766fb4a2c4
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at baseclass.Basepage.EX_wait(Basepage.java:43)
+	at pages.HomePage.Closelocation(HomePage.java:66)
+	at TestCases.CartpageValidation.ValidatesearchwithDataprovider(CartpageValidation.java:45)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.CartpageValidation#ValidatesearchwithDataprovider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Rice,</td><td>Dhall</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="73968" started-at="2025-05-13T17:46:50Z" finished-at="2025-05-13T17:48:04Z">
+  <suite name="Jio Mart Website" duration-ms="25136" started-at="2025-05-26T16:08:08Z" finished-at="2025-05-26T16:08:33Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="73968" started-at="2025-05-13T17:46:50Z" finished-at="2025-05-13T17:48:04Z">
-      <class name="TestCases.HomepageTest">
-        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:TestCases.HomepageTest@1ec318]" name="setdriver" is-config="true" duration-ms="68843" started-at="2025-05-13T17:46:50Z" finished-at="2025-05-13T17:47:59Z">
+    <test name="Homepage,Fruits page and cart page Validation" duration-ms="25136" started-at="2025-05-26T16:08:08Z" finished-at="2025-05-26T16:08:33Z">
+      <class name="TestCases.CartpageValidation">
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:TestCases.CartpageValidation@17faa95]" name="setdriver" is-config="true" duration-ms="10581" started-at="2025-05-26T16:08:09Z" finished-at="2025-05-26T16:08:19Z">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,92 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setdriver -->
-        <test-method status="PASS" signature="VerifyTitleTest()[pri:0, instance:TestCases.HomepageTest@1ec318]" name="VerifyTitleTest" duration-ms="182" started-at="2025-05-13T17:47:59Z" finished-at="2025-05-13T17:47:59Z">
+        <test-method status="PASS" signature="ValidatesearchwithDataprovider(java.lang.String, java.lang.String)[pri:0, instance:TestCases.CartpageValidation@17faa95]" name="ValidatesearchwithDataprovider" duration-ms="2676" started-at="2025-05-26T16:08:19Z" data-provider="Items" finished-at="2025-05-26T16:08:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rice,]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dhall]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyTitleTest -->
-        <test-method status="PASS" signature="ClickonCart()[pri:1, instance:TestCases.HomepageTest@1ec318]" name="ClickonCart" duration-ms="3849" started-at="2025-05-13T17:47:59Z" finished-at="2025-05-13T17:48:03Z">
+        </test-method> <!-- ValidatesearchwithDataprovider -->
+        <test-method status="FAIL" signature="ValidatesearchwithDataprovider(java.lang.String, java.lang.String)[pri:0, instance:TestCases.CartpageValidation@17faa95]" name="ValidatesearchwithDataprovider" duration-ms="10505" started-at="2025-05-26T16:08:22Z" data-provider="Items" finished-at="2025-05-26T16:08:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sugar,]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Salt]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='close icon'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARAVIND', ip: '192.168.12.90', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bedaa2c86f91f9508f65e0766fb4a2c4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='close icon'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARAVIND', ip: '192.168.12.90', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bedaa2c86f91f9508f65e0766fb4a2c4
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at baseclass.Basepage.EX_wait(Basepage.java:43)
+at pages.HomePage.Closelocation(HomePage.java:66)
+at TestCases.CartpageValidation.ValidatesearchwithDataprovider(CartpageValidation.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickonCart -->
-        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:TestCases.HomepageTest@1ec318]" name="CloseDriver" is-config="true" duration-ms="714" started-at="2025-05-13T17:48:03Z" finished-at="2025-05-13T17:48:04Z">
+        </test-method> <!-- ValidatesearchwithDataprovider -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:TestCases.CartpageValidation@17faa95]" name="CloseDriver" is-config="true" duration-ms="812" started-at="2025-05-26T16:08:32Z" finished-at="2025-05-26T16:08:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
-      </class> <!-- TestCases.HomepageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- TestCases.CartpageValidation -->
+    </test> <!-- Homepage,Fruits page and cart page Validation -->
+  </suite> <!-- Jio Mart Website -->
 </testng-results>

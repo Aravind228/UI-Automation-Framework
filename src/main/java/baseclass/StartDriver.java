@@ -8,7 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -52,12 +54,13 @@ public class StartDriver {
 		
 	}
 	
+	
 	//Getting the browser instance
 	public WebDriver GetDriver() {
 		return driver.get();
 	}
 	
-	@AfterClass
+	@AfterClass(enabled=true)
 	//closing the browser
 	public void CloseDriver() {
 		if (driver.get() != null) {

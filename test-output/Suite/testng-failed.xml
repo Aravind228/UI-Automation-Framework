@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="Utilities.ExtentReportClass"/>
+  </listeners>
+  <test thread-count="5" name="Jio Mart Validation(failed)">
+    <classes>
+      <class name="TestCases.AddFruitstocart">
+        <methods>
+          <include name="CloseDriver"/>
+          <include name="addfruitsandclickoncart"/>
+          <include name="setdriver"/>
+        </methods>
+      </class> <!-- TestCases.AddFruitstocart -->
+    </classes>
+  </test> <!-- Jio Mart Validation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

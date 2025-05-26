@@ -7,7 +7,9 @@ import baseclass.Basepage;
 
 public class CartPage extends Basepage{
 	
-	By Cart = By.xpath("//h1[text()='My Cart']");
+	private By Cart = By.xpath("//h1[text()='My Cart']");
+	private By Paymentdetails = By.xpath("//div[text()='Payment Details']");
+	private By Placeorder = By.xpath("//div[text()=' Place Order ']");
 
 	public CartPage(WebDriver driver) {
 		super(driver);
@@ -18,6 +20,17 @@ public class CartPage extends Basepage{
 	public String Verifycart() {
 		return gettext(Cart);
 	}
+	
+	public String Verifypaymenttext() {
+		return gettext(Paymentdetails);
+	}
+	
+	public Siginpage clickonorder() {
+		Click(Placeorder);
+		return new Siginpage(driver);
+	}
+	
+	
 	
 	
 	

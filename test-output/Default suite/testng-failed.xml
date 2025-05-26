@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.HomepageTest">
+      <class name="TestCases.CartpageValidation">
         <methods>
           <include name="CloseDriver"/>
-          <include name="ClickonCart"/>
+          <include name="ValidatesearchwithDataprovider"/>
           <include name="setdriver"/>
-          <include name="VerifyTitleTest"/>
         </methods>
-      </class> <!-- TestCases.HomepageTest -->
+      </class> <!-- TestCases.CartpageValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

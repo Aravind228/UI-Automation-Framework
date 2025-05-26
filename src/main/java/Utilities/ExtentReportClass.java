@@ -8,10 +8,11 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.Status; 
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -41,6 +42,20 @@ public class ExtentReportClass extends TestUtility implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		test=extent.createTest(result.getName());
 		test.log(Status.PASS, "test case is passed"+result.getName());
+		
+		String screenshotPath = null;
+		try {
+			screenshotPath = capturescreenshot(result.getName());
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+        if (screenshotPath != null) {
+            try {
+                test.pass("Screenshot of Pass:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 		
 	}
 	public void onTestFailure(ITestResult result) {
