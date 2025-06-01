@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 26 21:38:08 IST 2025</td>
+<td>Started on:</td><td>Sun Jun 01 13:48:09 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25136 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26627 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,30 +75,48 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.CartpageValidation.ValidatesearchwithDataprovider()'><b>ValidatesearchwithDataprovider</b><br>Test class: TestCases.CartpageValidation<br>Parameters: Sugar,, Salt</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt=&apos;close icon&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+<td title='TestCases.HomepageTest.ClickonCart()'><b>ClickonCart</b><br>Test class: TestCases.HomepageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;jm-btn primary medium jm-icon jm-border-none&quot; id=&quot;btn_minicart&quot; aria-label=&quot;cart icon&quot;&gt;...&lt;/button&gt; is not clickable at point (1137, 40). Other element would receive the click: &lt;div class=&quot;backdrop web_pincode_popup&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=109.0.5414.120)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARAVIND&apos;, ip: &apos;192.168.12.90&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;ARAVIND&apos;, ip: &apos;192.168.12.204&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bedaa2c86f91f9508f65e0766fb4a2c4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at baseclass.Basepage.EX_wait(Basepage.java:43)
-	at pages.HomePage.Closelocation(HomePage.java:66)
-	at TestCases.CartpageValidation.ValidatesearchwithDataprovider(CartpageValidation.java:45)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8268196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace8268196'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt=&apos;close icon&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:52716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2499a474cf9c25980375443afb68d963
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at baseclass.Basepage.Click(Basepage.java:31)
+	at pages.HomePage.ClickonCart(HomePage.java:43)
+	at TestCases.HomepageTest.ClickonCart(HomepageTest.java:32)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3372802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3372802'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;jm-btn primary medium jm-icon jm-border-none&quot; id=&quot;btn_minicart&quot; aria-label=&quot;cart icon&quot;&gt;...&lt;/button&gt; is not clickable at point (1137, 40). Other element would receive the click: &lt;div class=&quot;backdrop web_pincode_popup&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=109.0.5414.120)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARAVIND&apos;, ip: &apos;192.168.12.90&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;ARAVIND&apos;, ip: &apos;192.168.12.204&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bedaa2c86f91f9508f65e0766fb4a2c4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at baseclass.Basepage.EX_wait(Basepage.java:43)
-	at pages.HomePage.Closelocation(HomePage.java:66)
-	at TestCases.CartpageValidation.ValidatesearchwithDataprovider(CartpageValidation.java:45)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:52716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2499a474cf9c25980375443afb68d963
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at baseclass.Basepage.Click(Basepage.java:31)
+	at pages.HomePage.ClickonCart(HomePage.java:43)
+	at TestCases.HomepageTest.ClickonCart(HomepageTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -125,8 +143,8 @@ Session ID: bedaa2c86f91f9508f65e0766fb4a2c4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
-<td>TestCases.CartpageValidation@17faa95</td></tr>
+<td>1</td>
+<td>TestCases.HomepageTest@1ec318</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -136,10 +154,10 @@ Session ID: bedaa2c86f91f9508f65e0766fb4a2c4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.CartpageValidation.ValidatesearchwithDataprovider()'><b>ValidatesearchwithDataprovider</b><br>Test class: TestCases.CartpageValidation<br>Parameters: Rice,, Dhall</td>
+<td title='TestCases.HomepageTest.VerifyTitleTest()'><b>VerifyTitleTest</b><br>Test class: TestCases.HomepageTest</td>
 <td></td>
 <td>2</td>
-<td>TestCases.CartpageValidation@17faa95</td></tr>
+<td>TestCases.HomepageTest@1ec318</td></tr>
 </table><p>
 </body>
 </html>

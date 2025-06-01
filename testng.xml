@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Jio Mart Website">
-<parameter name="browser" value="chrome"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
+
+	<!-- <listeners> <listener class-name="Utilities.ExtentReportClass" /> </listeners> -->
+
 	<listeners>
 		<listener class-name="Utilities.ExtentReportClass" />
 	</listeners>
-	
-	<test thread-count="5" name="Homepage,Fruits page and cart page Validation">
-	
+
+	<test thread-count="5"
+		name="Homepage,Fruits page and cart page Validation">
 		<classes>
-			<!-- <class name="TestCases.HomepageTest" />
-			<class name="TestCases.AddFruitstocart" /> -->
-			<class name="TestCases.CartpageValidation" /> 
+			<class name="TestCases.HomepageTest" />
+			<!-- <class name="TestCases.AddFruitstocart" /> <class name="TestCases.CartpageValidation" 
+				/> -->
 		</classes>
-	</test> <!-- Test --> 
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
   

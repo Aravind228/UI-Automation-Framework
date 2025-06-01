@@ -1,0 +1,7 @@
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="jm-btn primary medium jm-icon jm-border-none" id="btn_minicart" aria-label="cart icon">...</button> is not clickable at point (1137, 40). Other element would receive the click: <div class="backdrop web_pincode_popup" style="display: block;"></div>
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARAVIND', ip: '192.168.12.204', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:52630}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c5c9ccdafdb111cb344310600d729403

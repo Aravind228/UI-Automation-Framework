@@ -2,12 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Jio Mart Website" duration-ms="25136" started-at="2025-05-26T16:08:08Z" finished-at="2025-05-26T16:08:33Z">
+  <suite name="Jio Mart Website" duration-ms="26627" started-at="2025-06-01T08:18:09Z" finished-at="2025-06-01T08:18:36Z">
     <groups>
+      <group name="HomepageTest">
+        <method signature="HomepageTest.ClickonCart()[pri:2, instance:TestCases.HomepageTest@1ec318]" name="ClickonCart" class="TestCases.HomepageTest"/>
+        <method signature="HomepageTest.VerifyTitleTest()[pri:1, instance:TestCases.HomepageTest@1ec318]" name="VerifyTitleTest" class="TestCases.HomepageTest"/>
+      </group> <!-- HomepageTest -->
     </groups>
-    <test name="Homepage,Fruits page and cart page Validation" duration-ms="25136" started-at="2025-05-26T16:08:08Z" finished-at="2025-05-26T16:08:33Z">
-      <class name="TestCases.CartpageValidation">
-        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:TestCases.CartpageValidation@17faa95]" name="setdriver" is-config="true" duration-ms="10581" started-at="2025-05-26T16:08:09Z" finished-at="2025-05-26T16:08:19Z">
+    <test name="Homepage,Fruits page and cart page Validation" duration-ms="26627" started-at="2025-06-01T08:18:09Z" finished-at="2025-06-01T08:18:36Z">
+      <class name="TestCases.HomepageTest">
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:TestCases.HomepageTest@1ec318]" name="setdriver" is-config="true" duration-ms="21632" started-at="2025-06-01T08:18:10Z" finished-at="2025-06-01T08:18:32Z">
           <params>
             <param index="0">
               <value>
@@ -18,56 +22,44 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setdriver -->
-        <test-method status="PASS" signature="ValidatesearchwithDataprovider(java.lang.String, java.lang.String)[pri:0, instance:TestCases.CartpageValidation@17faa95]" name="ValidatesearchwithDataprovider" duration-ms="2676" started-at="2025-05-26T16:08:19Z" data-provider="Items" finished-at="2025-05-26T16:08:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rice,]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Dhall]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="VerifyTitleTest()[pri:1, instance:TestCases.HomepageTest@1ec318]" name="VerifyTitleTest" duration-ms="2204" started-at="2025-06-01T08:18:32Z" finished-at="2025-06-01T08:18:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidatesearchwithDataprovider -->
-        <test-method status="FAIL" signature="ValidatesearchwithDataprovider(java.lang.String, java.lang.String)[pri:0, instance:TestCases.CartpageValidation@17faa95]" name="ValidatesearchwithDataprovider" duration-ms="10505" started-at="2025-05-26T16:08:22Z" data-provider="Items" finished-at="2025-05-26T16:08:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sugar,]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Salt]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+        </test-method> <!-- VerifyTitleTest -->
+        <test-method status="FAIL" signature="ClickonCart()[pri:2, instance:TestCases.HomepageTest@1ec318]" name="ClickonCart" duration-ms="1221" started-at="2025-06-01T08:18:34Z" finished-at="2025-06-01T08:18:35Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='close icon'] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[element click intercepted: Element <button class="jm-btn primary medium jm-icon jm-border-none" id="btn_minicart" aria-label="cart icon">...</button> is not clickable at point (1137, 40). Other element would receive the click: <div class="backdrop web_pincode_popup" style="display: block;"></div>
+  (Session info: chrome=109.0.5414.120)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARAVIND', ip: '192.168.12.90', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
+System info: host: 'ARAVIND', ip: '192.168.12.204', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bedaa2c86f91f9508f65e0766fb4a2c4]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:52716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2499a474cf9c25980375443afb68d963]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='close icon'] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="jm-btn primary medium jm-icon jm-border-none" id="btn_minicart" aria-label="cart icon">...</button> is not clickable at point (1137, 40). Other element would receive the click: <div class="backdrop web_pincode_popup" style="display: block;"></div>
+  (Session info: chrome=109.0.5414.120)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARAVIND', ip: '192.168.12.90', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
+System info: host: 'ARAVIND', ip: '192.168.12.204', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bedaa2c86f91f9508f65e0766fb4a2c4
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at baseclass.Basepage.EX_wait(Basepage.java:43)
-at pages.HomePage.Closelocation(HomePage.java:66)
-at TestCases.CartpageValidation.ValidatesearchwithDataprovider(CartpageValidation.java:45)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:52716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2499a474cf9c25980375443afb68d963
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at baseclass.Basepage.Click(Basepage.java:31)
+at pages.HomePage.ClickonCart(HomePage.java:43)
+at TestCases.HomepageTest.ClickonCart(HomepageTest.java:32)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -95,15 +87,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidatesearchwithDataprovider -->
-        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:TestCases.CartpageValidation@17faa95]" name="CloseDriver" is-config="true" duration-ms="812" started-at="2025-05-26T16:08:32Z" finished-at="2025-05-26T16:08:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseDriver -->
-      </class> <!-- TestCases.CartpageValidation -->
+        </test-method> <!-- ClickonCart -->
+      </class> <!-- TestCases.HomepageTest -->
     </test> <!-- Homepage,Fruits page and cart page Validation -->
   </suite> <!-- Jio Mart Website -->
 </testng-results>

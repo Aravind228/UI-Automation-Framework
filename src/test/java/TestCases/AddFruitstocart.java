@@ -17,7 +17,7 @@ public class AddFruitstocart extends StartDriver {
 	CartPage cartpage;
 	
 	
-	@Test(priority =2)
+	@Test(priority =2,groups="AddFruitstocart")
 	public void Clickonfruits() {
 		homepage = new HomePage(GetDriver());
 		homepage.Closelocation();
@@ -25,7 +25,7 @@ public class AddFruitstocart extends StartDriver {
 		
 	}
 	
-	@Test(priority =3)
+	@Test(priority =3,groups="AddFruitstocart")
 	public void addfruitsandclickoncart() {
 		fruits.addfirstfruit();
 		cartpage =fruits.NavigatetoCart();
@@ -34,6 +34,8 @@ public class AddFruitstocart extends StartDriver {
 		
 		
 	}
+	
+	
 	
 	
 

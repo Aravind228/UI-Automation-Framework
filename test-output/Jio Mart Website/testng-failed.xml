@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Homepage,Fruits page and cart page Validation(failed)">
     <classes>
-      <class name="TestCases.CartpageValidation">
+      <class name="TestCases.HomepageTest">
         <methods>
           <include name="CloseDriver"/>
-          <include name="ValidatesearchwithDataprovider" invocation-numbers="1"/>
+          <include name="ClickonCart"/>
           <include name="setdriver"/>
         </methods>
-      </class> <!-- TestCases.CartpageValidation -->
+      </class> <!-- TestCases.HomepageTest -->
     </classes>
   </test> <!-- Homepage,Fruits page and cart page Validation(failed) -->
 </suite> <!-- Failed suite [Jio Mart Website] -->

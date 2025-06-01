@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -19,80 +20,80 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
 
+
+
 public class ExtentReportClass extends TestUtility implements ITestListener {
 	
+	private static ExtentReports extent;
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
+
+    public void onStart(ITestContext context) {
+        String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH.mm.ss").format(new Date());
+        String repName = "Test-Report-" + timeStamp + ".html";
+
+        ExtentSparkReporter sparkReporter = new ExtentSparkReporter("./AutomationTestReports/" + repName);
+        sparkReporter.config().setDocumentTitle("JioMart Automation Report");
+        sparkReporter.config().setReportName("Regression Testing");
+        sparkReporter.config().setTheme(Theme.STANDARD);
+
+        extent = new ExtentReports();
+        extent.attachReporter(sparkReporter);
+        extent.setSystemInfo("OS", "Windows 11");
+        extent.setSystemInfo("Environment", "Automation");
+        extent.setSystemInfo("Tester", "Aravind");
+        extent.setSystemInfo("Browser", "Chrome");
+    }
+
+    public void onTestStart(ITestResult result) {
+        ExtentTest extentTest = extent.createTest(result.getName());
+        test.set(extentTest);
+        extentTest.log(Status.INFO, "Test started: " + result.getName());
+    }
+
+    
+    public void onTestSuccess(ITestResult result) {
+        ExtentTest extentTest = test.get();
+        extentTest.log(Status.PASS, "Test passed: " + result.getName());
+
+        attachScreenshot(extentTest, result);
+    }
+
+    
+    public void onTestFailure(ITestResult result) {
+        ExtentTest extentTest = test.get();
+        extentTest.log(Status.FAIL, "Test failed: " + result.getThrowable());
+
+        attachScreenshot(extentTest, result);
+    }
+    
+   
+    public void onTestSkipped(ITestResult result) {
+        ExtentTest extentTest = test.get();
+        extentTest.log(Status.SKIP, "Test skipped: " + result.getName());
+    }
+
+   
+    public void onFinish(ITestContext context) {
+        extent.flush();
+    }
+
+  
+    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+        // Optional to implement
+    }
+
+    private void attachScreenshot(ExtentTest extentTest, ITestResult result) {
+        try {
+            String screenshotPath = capturescreenshot(result.getName());
+            if (screenshotPath != null) {
+                extentTest.addScreenCaptureFromPath(screenshotPath);
+            }
+        } catch (IOException e) {
+            extentTest.log(Status.WARNING, "Screenshot capture failed: " + e.getMessage());
+        }
+    }
 	
-	public ExtentSparkReporter sparkreporter;
-	public ExtentReports extent;
-	public ExtentTest test;
-	public void onStart(ITestContext context) {
-	String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH.mm.ss").format(new Date());
-	String repName = "Test-Report-" + ".html";
-	ExtentSparkReporter sparkreporter = new ExtentSparkReporter(".//TestReports//" +timeStamp+ repName);	
-	sparkreporter.config().setDocumentTitle("JIoMartTest");
-	sparkreporter.config().setReportName("RegressionTesting");
-	sparkreporter.config().setTheme(Theme.STANDARD);
-	extent = new ExtentReports();
-	extent.attachReporter(sparkreporter);
-	extent.setSystemInfo("os", "windows11");
-	extent.setSystemInfo("environment", "automation");
-	extent.setSystemInfo("testername", "Aravind");
-	extent.setSystemInfo("browsername","chrome");
-	}
-	public void onTestSuccess(ITestResult result) {
-		test=extent.createTest(result.getName());
-		test.log(Status.PASS, "test case is passed"+result.getName());
-		
-		String screenshotPath = null;
-		try {
-			screenshotPath = capturescreenshot(result.getName());
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-        if (screenshotPath != null) {
-            try {
-                test.pass("Screenshot of Pass:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-		
-	}
-	public void onTestFailure(ITestResult result) {
-		test=extent.createTest(result.getName());
-		test.log(Status.FAIL, "testcase failed"+result.getName());
-		String screenshotPath = null;
-		try {
-			screenshotPath = capturescreenshot(result.getName());
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-        if (screenshotPath != null) {
-            try {
-                test.fail("Screenshot of failure:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-		
-	}
-	public void onTestSkipped(ITestResult result) {
-		test=extent.createTest(result.getName());
-		test.log(Status.SKIP,"testcase has been skipped"+result.getName());
-	}
-	public void onFinish(ITestContext context) {
-		System.out.println("Flushing Extent Report...");
-		extent.flush();
-	}
-	public void onTestStart(ITestResult result) {
-		test=extent.createTest(result.getName());
-		test.log(Status.INFO,"testcase has been started"+result.getName());
-		
-	}
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		test=extent.createTest(result.getName());
-		
-	}
+
 
 	                                                                                                                                                                                                                                                                           
 }

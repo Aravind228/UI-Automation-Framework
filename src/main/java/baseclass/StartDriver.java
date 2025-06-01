@@ -19,9 +19,9 @@ public class StartDriver {
 	
 	
 	//Assigning the driver to theadlocal for parallel execution 
-	private ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	
-	@Parameters({"browser"})
+	@Parameters({"browser"}  )
 	@BeforeClass
 	//setting driver according to browser needed for execution
 	public void setdriver(String browser) throws IOException {
@@ -56,11 +56,11 @@ public class StartDriver {
 	
 	
 	//Getting the browser instance
-	public WebDriver GetDriver() {
+	public static WebDriver GetDriver() {
 		return driver.get();
 	}
 	
-	@AfterClass(enabled=true)
+	@AfterClass(enabled=false)
 	//closing the browser
 	public void CloseDriver() {
 		if (driver.get() != null) {

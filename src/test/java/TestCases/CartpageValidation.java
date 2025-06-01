@@ -17,7 +17,7 @@ public class CartpageValidation extends StartDriver {
 	HomePage homepage;
 	FreshFruitsPage fruits;
 	
-	@Test(priority =0,enabled=false)
+	@Test(priority =0,enabled=false,groups="CartpageValidation")
 	public void clickonplaceordertest() {
 		homepage = new HomePage(GetDriver());
 		homepage.Closelocation();
@@ -39,7 +39,7 @@ public class CartpageValidation extends StartDriver {
 				};
 	}
 	
-	@Test(dataProvider="Items")
+	@Test(dataProvider="Items",groups="CartpageValidation")
 	public void ValidatesearchwithDataprovider(String item1,String item2) {
 		homepage = new HomePage(GetDriver());
 		homepage.Closelocation();

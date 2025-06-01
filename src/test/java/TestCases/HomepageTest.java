@@ -17,17 +17,17 @@ public class HomepageTest extends StartDriver {
 	
 	
 	
-	@Test(priority =1,enabled=true)
+	@Test(priority =1,enabled=true,groups="HomepageTest")
 	public void VerifyTitleTest() {
 		
-		/*homepage = new HomePage(GetDriver());
-		homepage.Closelocation();*/
+		homepage = new HomePage(GetDriver());
+		//homepage.Closelocation();
 		boolean status = homepage.VerifyTitle();
 		Assert.assertTrue(status);
 	}
 	
 	
-	@Test(priority =2,enabled=true)
+	@Test(priority =2,enabled=true,groups="HomepageTest")
 	public void ClickonCart() {
 		cartpage = homepage.ClickonCart();
 		String get=cartpage.Verifycart();
@@ -35,7 +35,7 @@ public class HomepageTest extends StartDriver {
 		
 		}
 	
-	@Test(priority =0)
+	@Test(priority =0,enabled=false,groups="HomepageTest")
 	public void Validatesearchwithhashmap() {
 		homepage = new HomePage(GetDriver());
 		homepage.Closelocation();
