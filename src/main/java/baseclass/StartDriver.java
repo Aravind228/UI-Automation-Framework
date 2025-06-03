@@ -8,13 +8,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+//@Listeners(Utilities.RetryListner.class)
 public class StartDriver {
 	
 	
@@ -22,7 +26,7 @@ public class StartDriver {
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	
 	@Parameters({"browser"}  )
-	@BeforeClass
+	@BeforeMethod(alwaysRun = true)
 	//setting driver according to browser needed for execution
 	public void setdriver(String browser) throws IOException {
 		
@@ -46,10 +50,9 @@ public class StartDriver {
 			throw new IllegalArgumentException("No Browser Matching "+ browser );
 		}
 		driver.set(localdriver);
-		driver.get().manage().timeouts().pageLoadTimeout(5000,TimeUnit.SECONDS);
+		driver.get().manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 		driver.get().get(Prop_Reader.getproperty("url"));
 		driver.get().manage().window().maximize();
-		driver.get().manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 		}
 		
 	}
@@ -60,11 +63,12 @@ public class StartDriver {
 		return driver.get();
 	}
 	
-	@AfterClass(enabled=false)
+	@AfterMethod(enabled=true)
 	//closing the browser
 	public void CloseDriver() {
 		if (driver.get() != null) {
 			driver.get().quit();
+			driver.remove();
 		}
 	}
 	

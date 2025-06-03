@@ -3,13 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.CartpageValidation">
+      <class name="my_own_created_htmlpages_Test.DashboardPageTest">
         <methods>
+          <include name="testLogoutAfterLogin"/>
+          <include name="testSelectSkillAfterLogin"/>
           <include name="CloseDriver"/>
-          <include name="ValidatesearchwithDataprovider"/>
+          <include name="testFillNameAfterLogin"/>
+          <include name="testSelectCountryAfterLogin"/>
+          <include name="testClickAlertAndSaveAfterLogin"/>
           <include name="setdriver"/>
+          <include name="testUploadFileAfterLogin"/>
+          <include name="testSelectGenderAfterLogin"/>
+          <include name="setupPageObjects"/>
         </methods>
-      </class> <!-- TestCases.CartpageValidation -->
+      </class> <!-- my_own_created_htmlpages_Test.DashboardPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

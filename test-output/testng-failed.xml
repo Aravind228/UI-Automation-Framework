@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Jio Mart Website]">
-  <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="Utilities.ExtentReportClass"/>
   </listeners>
-  <test thread-count="5" name="Homepage,Fruits page and cart page Validation(failed)">
+  <test thread-count="5" name="My Own Application Test(failed)">
+    <parameter name="firstName" value="Aravind"/>
+    <parameter name="lastName" value="Sharva"/>
+    <parameter name="country" value="India"/>
+    <parameter name="password" value="Aravind12345"/>
+    <parameter name="gender" value="Male"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="skill" value="selenium"/>
+    <parameter name="filePath" value="D:\New folder\Test Upload.txt"/>
+    <parameter name="username" value="admin"/>
     <classes>
-      <class name="TestCases.HomepageTest">
+      <class name="my_own_created_htmlpages_Test.DashboardPageTest">
         <methods>
+          <include name="testLogoutAfterLogin" invocation-numbers="0"/>
           <include name="CloseDriver"/>
-          <include name="ClickonCart"/>
           <include name="setdriver"/>
+          <include name="setupPageObjects"/>
         </methods>
-      </class> <!-- TestCases.HomepageTest -->
+      </class> <!-- my_own_created_htmlpages_Test.DashboardPageTest -->
     </classes>
-  </test> <!-- Homepage,Fruits page and cart page Validation(failed) -->
-</suite> <!-- Failed suite [Jio Mart Website] -->
+  </test> <!-- My Own Application Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

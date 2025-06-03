@@ -4,6 +4,7 @@
   <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="Utilities.ExtentReportClass"/>
+    <listener class-name="Utilities.RetryListner"/>
   </listeners>
   <test thread-count="5" name="Homepage,Fruits page and cart page Validation(failed)">
     <classes>

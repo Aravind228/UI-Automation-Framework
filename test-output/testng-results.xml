@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="14" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Jio Mart Website" duration-ms="26627" started-at="2025-06-01T08:18:09Z" finished-at="2025-06-01T08:18:36Z">
+  <suite name="Suite" duration-ms="124619" started-at="2025-06-03T14:32:52Z" finished-at="2025-06-03T14:34:56Z">
     <groups>
-      <group name="HomepageTest">
-        <method signature="HomepageTest.ClickonCart()[pri:2, instance:TestCases.HomepageTest@1ec318]" name="ClickonCart" class="TestCases.HomepageTest"/>
-        <method signature="HomepageTest.VerifyTitleTest()[pri:1, instance:TestCases.HomepageTest@1ec318]" name="VerifyTitleTest" class="TestCases.HomepageTest"/>
-      </group> <!-- HomepageTest -->
     </groups>
-    <test name="Homepage,Fruits page and cart page Validation" duration-ms="26627" started-at="2025-06-01T08:18:09Z" finished-at="2025-06-01T08:18:36Z">
-      <class name="TestCases.HomepageTest">
-        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:TestCases.HomepageTest@1ec318]" name="setdriver" is-config="true" duration-ms="21632" started-at="2025-06-01T08:18:10Z" finished-at="2025-06-01T08:18:32Z">
+    <test name="My Own Application Test" duration-ms="124619" started-at="2025-06-03T14:32:52Z" finished-at="2025-06-03T14:34:56Z">
+      <class name="my_own_created_htmlpages_Test.LoginPageTest">
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setdriver" is-config="true" duration-ms="8868" started-at="2025-06-03T14:32:52Z" finished-at="2025-06-03T14:33:01Z">
           <params>
             <param index="0">
               <value>
@@ -22,44 +18,438 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setdriver -->
-        <test-method status="PASS" signature="VerifyTitleTest()[pri:1, instance:TestCases.HomepageTest@1ec318]" name="VerifyTitleTest" duration-ms="2204" started-at="2025-06-01T08:18:32Z" finished-at="2025-06-01T08:18:34Z">
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setupPageObjects" is-config="true" duration-ms="17" started-at="2025-06-03T14:33:01Z" finished-at="2025-06-03T14:33:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyTitleTest -->
-        <test-method status="FAIL" signature="ClickonCart()[pri:2, instance:TestCases.HomepageTest@1ec318]" name="ClickonCart" duration-ms="1221" started-at="2025-06-01T08:18:34Z" finished-at="2025-06-01T08:18:35Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="TestpageTitle()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="TestpageTitle" duration-ms="27" started-at="2025-06-03T14:33:01Z" finished-at="2025-06-03T14:33:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestpageTitle -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="CloseDriver" is-config="true" duration-ms="623" started-at="2025-06-03T14:33:01Z" finished-at="2025-06-03T14:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setdriver" is-config="true" duration-ms="5112" started-at="2025-06-03T14:33:02Z" finished-at="2025-06-03T14:33:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="testValidLogin(java.lang.String, java.lang.String)[pri:1, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="testValidLogin" duration-ms="6084" started-at="2025-06-03T14:33:07Z" finished-at="2025-06-03T14:33:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aravind12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:33:07Z" finished-at="2025-06-03T14:33:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="CloseDriver" is-config="true" duration-ms="643" started-at="2025-06-03T14:33:13Z" finished-at="2025-06-03T14:33:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setdriver" is-config="true" duration-ms="3274" started-at="2025-06-03T14:33:14Z" finished-at="2025-06-03T14:33:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:33:17Z" finished-at="2025-06-03T14:33:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="testInvalidLogin" duration-ms="857" started-at="2025-06-03T14:33:17Z" finished-at="2025-06-03T14:33:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="CloseDriver" is-config="true" duration-ms="643" started-at="2025-06-03T14:33:18Z" finished-at="2025-06-03T14:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setdriver" is-config="true" duration-ms="3285" started-at="2025-06-03T14:33:19Z" finished-at="2025-06-03T14:33:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="testBlankUsername()[pri:3, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="testBlankUsername" duration-ms="864" started-at="2025-06-03T14:33:22Z" finished-at="2025-06-03T14:33:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlankUsername -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:33:22Z" finished-at="2025-06-03T14:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="CloseDriver" is-config="true" duration-ms="626" started-at="2025-06-03T14:33:23Z" finished-at="2025-06-03T14:33:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setdriver" is-config="true" duration-ms="5391" started-at="2025-06-03T14:33:24Z" finished-at="2025-06-03T14:33:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:33:29Z" finished-at="2025-06-03T14:33:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="testBlankPassword()[pri:4, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="testBlankPassword" duration-ms="856" started-at="2025-06-03T14:33:29Z" finished-at="2025-06-03T14:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlankPassword -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="CloseDriver" is-config="true" duration-ms="644" started-at="2025-06-03T14:33:30Z" finished-at="2025-06-03T14:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setdriver" is-config="true" duration-ms="3539" started-at="2025-06-03T14:33:31Z" finished-at="2025-06-03T14:33:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="testBlankUsernameAndPassword()[pri:5, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="testBlankUsernameAndPassword" duration-ms="854" started-at="2025-06-03T14:33:34Z" finished-at="2025-06-03T14:33:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlankUsernameAndPassword -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:33:34Z" finished-at="2025-06-03T14:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="CloseDriver" is-config="true" duration-ms="635" started-at="2025-06-03T14:33:35Z" finished-at="2025-06-03T14:33:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setdriver" is-config="true" duration-ms="3461" started-at="2025-06-03T14:33:36Z" finished-at="2025-06-03T14:33:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="testErrorMessageDisplay()[pri:6, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="testErrorMessageDisplay" duration-ms="944" started-at="2025-06-03T14:33:39Z" finished-at="2025-06-03T14:33:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testErrorMessageDisplay -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:33:39Z" finished-at="2025-06-03T14:33:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.LoginPageTest@1dc339b]" name="CloseDriver" is-config="true" duration-ms="613" started-at="2025-06-03T14:33:41Z" finished-at="2025-06-03T14:33:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+      </class> <!-- my_own_created_htmlpages_Test.LoginPageTest -->
+      <class name="my_own_created_htmlpages_Test.DashboardPageTest">
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setdriver" is-config="true" duration-ms="3192" started-at="2025-06-03T14:33:41Z" finished-at="2025-06-03T14:33:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setupPageObjects" is-config="true" duration-ms="1" started-at="2025-06-03T14:33:44Z" finished-at="2025-06-03T14:33:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="testFillNameAfterLogin(java.lang.String, java.lang.String)[pri:7, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="testFillNameAfterLogin" duration-ms="4216" started-at="2025-06-03T14:33:44Z" finished-at="2025-06-03T14:33:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aravind12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFillNameAfterLogin -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="CloseDriver" is-config="true" duration-ms="631" started-at="2025-06-03T14:33:49Z" finished-at="2025-06-03T14:33:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setdriver" is-config="true" duration-ms="5513" started-at="2025-06-03T14:33:49Z" finished-at="2025-06-03T14:33:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="testSelectGenderAfterLogin(java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="testSelectGenderAfterLogin" duration-ms="4228" started-at="2025-06-03T14:33:55Z" finished-at="2025-06-03T14:33:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aravind12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectGenderAfterLogin -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:33:55Z" finished-at="2025-06-03T14:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="CloseDriver" is-config="true" duration-ms="711" started-at="2025-06-03T14:33:59Z" finished-at="2025-06-03T14:34:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setdriver" is-config="true" duration-ms="5010" started-at="2025-06-03T14:34:00Z" finished-at="2025-06-03T14:34:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:34:05Z" finished-at="2025-06-03T14:34:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="testSelectSkillAfterLogin(java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="testSelectSkillAfterLogin" duration-ms="4161" started-at="2025-06-03T14:34:05Z" finished-at="2025-06-03T14:34:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aravind12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectSkillAfterLogin -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="CloseDriver" is-config="true" duration-ms="671" started-at="2025-06-03T14:34:09Z" finished-at="2025-06-03T14:34:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setdriver" is-config="true" duration-ms="5796" started-at="2025-06-03T14:34:10Z" finished-at="2025-06-03T14:34:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="testSelectCountryAfterLogin(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="testSelectCountryAfterLogin" duration-ms="4457" started-at="2025-06-03T14:34:16Z" finished-at="2025-06-03T14:34:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aravind12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectCountryAfterLogin -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:34:16Z" finished-at="2025-06-03T14:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="CloseDriver" is-config="true" duration-ms="681" started-at="2025-06-03T14:34:20Z" finished-at="2025-06-03T14:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setdriver" is-config="true" duration-ms="3391" started-at="2025-06-03T14:34:21Z" finished-at="2025-06-03T14:34:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:34:24Z" finished-at="2025-06-03T14:34:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="testUploadFileAfterLogin(java.lang.String, java.lang.String, java.lang.String)[pri:11, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="testUploadFileAfterLogin" duration-ms="4097" started-at="2025-06-03T14:34:24Z" finished-at="2025-06-03T14:34:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aravind12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[D:\New folder\Test Upload.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadFileAfterLogin -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="CloseDriver" is-config="true" duration-ms="650" started-at="2025-06-03T14:34:29Z" finished-at="2025-06-03T14:34:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setdriver" is-config="true" duration-ms="3491" started-at="2025-06-03T14:34:29Z" finished-at="2025-06-03T14:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:34:33Z" finished-at="2025-06-03T14:34:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="PASS" signature="testClickAlertAndSaveAfterLogin(java.lang.String, java.lang.String)[pri:12, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="testClickAlertAndSaveAfterLogin" duration-ms="14471" started-at="2025-06-03T14:34:33Z" finished-at="2025-06-03T14:34:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aravind12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickAlertAndSaveAfterLogin -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="CloseDriver" is-config="true" duration-ms="650" started-at="2025-06-03T14:34:48Z" finished-at="2025-06-03T14:34:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="setdriver(java.lang.String)[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setdriver" is-config="true" duration-ms="3168" started-at="2025-06-03T14:34:48Z" finished-at="2025-06-03T14:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="setupPageObjects()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="setupPageObjects" is-config="true" duration-ms="0" started-at="2025-06-03T14:34:51Z" finished-at="2025-06-03T14:34:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObjects -->
+        <test-method status="FAIL" signature="testLogoutAfterLogin(java.lang.String, java.lang.String)[pri:13, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="testLogoutAfterLogin" duration-ms="4201" started-at="2025-06-03T14:34:51Z" finished-at="2025-06-03T14:34:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aravind12345]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element <button class="jm-btn primary medium jm-icon jm-border-none" id="btn_minicart" aria-label="cart icon">...</button> is not clickable at point (1137, 40). Other element would receive the click: <div class="backdrop web_pincode_popup" style="display: block;"></div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARAVIND', ip: '192.168.12.204', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:52716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2499a474cf9c25980375443afb68d963]]>
+              <![CDATA[Logout failed or redirected to incorrect page expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="jm-btn primary medium jm-icon jm-border-none" id="btn_minicart" aria-label="cart icon">...</button> is not clickable at point (1137, 40). Other element would receive the click: <div class="backdrop web_pincode_popup" style="display: block;"></div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARAVIND', ip: '192.168.12.204', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:52716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2499a474cf9c25980375443afb68d963
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at baseclass.Basepage.Click(Basepage.java:31)
-at pages.HomePage.ClickonCart(HomePage.java:43)
-at TestCases.HomepageTest.ClickonCart(HomepageTest.java:32)
+              <![CDATA[java.lang.AssertionError: Logout failed or redirected to incorrect page expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at my_own_created_htmlpages_Test.DashboardPageTest.testLogoutAfterLogin(DashboardPageTest.java:96)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -87,11 +477,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickonCart -->
-      </class> <!-- TestCases.HomepageTest -->
-    </test> <!-- Homepage,Fruits page and cart page Validation -->
-  </suite> <!-- Jio Mart Website -->
+        </test-method> <!-- testLogoutAfterLogin -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:my_own_created_htmlpages_Test.DashboardPageTest@4fe44c]" name="CloseDriver" is-config="true" duration-ms="630" started-at="2025-06-03T14:34:56Z" finished-at="2025-06-03T14:34:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+      </class> <!-- my_own_created_htmlpages_Test.DashboardPageTest -->
+    </test> <!-- My Own Application Test -->
+  </suite> <!-- Suite -->
 </testng-results>

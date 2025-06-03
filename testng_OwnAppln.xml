@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="5">
+
+	<listeners>
+		<listener class-name="Utilities.ExtentReportClass" />
+	</listeners>
+
+	<!-- LoginPageTest -->
+	<test name="LoginPageTests" parallel="methods">
+		<parameter name="browser" value="chrome" />
+		<parameter name="username" value="admin" />
+		<parameter name="password" value="Aravind12345" />
+		<classes>
+			<class name="my_own_created_htmlpages_Test.LoginPageTest" />
+		</classes>
+	</test>
+
+	<!-- DashboardPageTest -->
+	<test name="DashboardPageTests" parallel="methods">
+		<parameter name="browser" value="chrome" />
+		<parameter name="username" value="admin" />
+		<parameter name="password" value="Aravind12345" />
+		<parameter name="firstName" value="Aravind" />
+		<parameter name="lastName" value="Sharva" />
+		<parameter name="gender" value="Male" />
+		<parameter name="skill" value="selenium" />
+		<parameter name="country" value="India" />
+		<parameter name="filePath" value="D:\New folder\Test Upload.txt" />
+		<classes>
+			<class name="my_own_created_htmlpages_Test.DashboardPageTest" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Jio Mart Website" >
+	
+	<parameter name="browser" value="chrome"></parameter>
+
+	<!-- <listeners> <listener class-name="Utilities.ExtentReportClass" /> </listeners> -->
+
+	<listeners>
+		<listener class-name="Utilities.ExtentReportClass" />
+		<listener class-name="Utilities.RetryListner" />
+	</listeners>
+
+	<test thread-count="5"
+		name="Homepage,Fruits page and cart page Validation">
+		<classes>
+			<class name="jioMart_TestCases.HomepageTest" />
+			<!-- <class name="jioMart_TestCases.AddFruitstocart" /> 
+			<class name="jioMart_TestCases.CartpageValidation"/> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+  
